@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #decba4, #3e5151);
+  padding: 10px 10px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  margin: 50px auto 20px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.todo-app h2 {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: lightgray;
+  border-radius: 15px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 40px;
+  background-color: darkred;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+button:hover {
+  background-color: #1c0000;
+  transition: 0.5s ease-in;
+}
+
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 15px 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li.checked {
+  color: darkred;
+  text-decoration: line-through;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  color: darkred;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul li span:hover {
+  background: lightgray;
+  border-radius: 50%;
+}
